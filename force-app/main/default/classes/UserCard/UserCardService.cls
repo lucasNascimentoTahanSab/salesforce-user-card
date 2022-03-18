@@ -1,4 +1,9 @@
 public class UserCardService {
+  /**
+   * Method responsible for getting all the platform users data in JSON
+   * format. The Salesforce User Object is converted to a DTO to assure
+   * consistency between backend and frontend systems.
+   */
   public static String getUsersData() {
     List<User> users = UserCardSelector.getUsers();
     List<UserDTO> usersDTO = getUsersConvertedToUserDTO(users);
