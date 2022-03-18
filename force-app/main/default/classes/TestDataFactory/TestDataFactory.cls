@@ -10,8 +10,7 @@ public class TestDataFactory {
     user.LastName = 'Tiago Henry Porto';
     user.Alias = 'dtiago';
     user.Email = 'danilo_tiago_porto@outlock.com.br';
-    user.Username =
-      'danilo_tiago_porto@outlock.com.br' + System.currentTimeMillis();
+    user.Username = 'danilo_tiago_porto@outlock.com.br' + System.currentTimeMillis();
     user.ProfileId = administratorProfile.Id;
     user.CompanyName = 'Jardim das Palmeiras';
     user.Title = 'Developer';
@@ -26,14 +25,8 @@ public class TestDataFactory {
   }
 
   public static Profile getAdministratorProfile() {
-    List<Profile> profiles = [
-      SELECT Id
-      FROM Profile
-      WHERE Name = 'Administrador do sistema'
-    ];
-    if (profiles.isEmpty()) {
-      return new Profile();
-    }
+    List<Profile> profiles = [SELECT Id FROM Profile WHERE Name = 'Administrador do sistema'];
+    if (profiles.isEmpty()) { return new Profile(); }
 
     return profiles.get(0);
   }

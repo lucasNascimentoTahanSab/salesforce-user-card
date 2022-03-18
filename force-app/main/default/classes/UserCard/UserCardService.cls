@@ -8,9 +8,7 @@ public class UserCardService {
 
   static List<UserDTO> getUsersConvertedToUserDTO(List<User> users) {
     List<UserDTO> usersDTO = new List<UserDTO>();
-    for (User user : users) {
-      usersDTO.add(new UserDTO(user));
-    }
+    for (User user : users) { usersDTO.add(new UserDTO(user)); }
 
     return usersDTO;
   }
