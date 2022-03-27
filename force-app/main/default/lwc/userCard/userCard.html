@@ -1,0 +1,17 @@
+<template>
+  <article>
+    <div>
+      <img src={user.BannerPhotoUrl} alt={labels.TextoAlternativoPlanoFundo} />
+    </div>
+    <div>
+      <div>
+        <img src={user.FullPhotoUrl} alt={labels.TextoAlternativoImagemUsuario} />
+      </div>
+    </div>
+    <section>
+      <h2>{user.Name}</h2>
+      <h3>{user.Title}</h3>
+      <p>{user.AboutMe}</p>
+    </section>
+  </article>
+</template>

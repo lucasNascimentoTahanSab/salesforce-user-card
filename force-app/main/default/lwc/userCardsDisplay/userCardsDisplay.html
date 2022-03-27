@@ -3,6 +3,8 @@
     <header>
       <h2>{labels.ConhecaColegasEquipe}</h2>
     </header>
-    <div></div>
+    <template for:each={users} for:item="user">
+      <c-user-card key={user.Id} user={user}></c-user-card>
+    </template>
   </article>
 </template>

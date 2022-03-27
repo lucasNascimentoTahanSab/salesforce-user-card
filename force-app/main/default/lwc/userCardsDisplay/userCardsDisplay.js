@@ -11,7 +11,6 @@ export default class UserCardsDisplay extends LightningElement {
   @wire(getUsersData)
   getUserData(result) {
     if (result.error) throw new Error(result.error)
-
-    this.users = JSON.parse(result.data)
+    else if (result.data) this.users = JSON.parse(result.data)
   }
 }

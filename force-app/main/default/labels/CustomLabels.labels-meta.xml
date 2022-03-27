@@ -7,4 +7,18 @@
         <shortDescription>Cabeçalho do componente userCardsDisplay.</shortDescription>
         <value>Conheça seus colegas de equipe!</value>
     </labels>
+    <labels>
+        <fullName>TextoAlternativoPlanoFundo</fullName>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto alternativo para imagem de plano de fundo.</shortDescription>
+        <value>Apresenta o plano de fundo definido no registro do usuário.</value>
+    </labels>
+    <labels>
+        <fullName>TextoAlternativoImagemUsuario</fullName>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>Texto alternativo para imagem de usuário.</shortDescription>
+        <value>Apresenta a foto definida no perfil do usuário.</value>
+    </labels>
 </CustomLabels>
