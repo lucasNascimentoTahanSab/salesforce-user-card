@@ -30,6 +30,7 @@ public class UserCardService {
     public UserDTO(User user) {
       this.Id = user.Id;
       this.Name = user.Name;
+      this.Title = user.Title;
       this.AboutMe = user.AboutMe;
       this.FullPhotoUrl = user.FullPhotoUrl;
       this.BannerPhotoUrl = user.BannerPhotoUrl;

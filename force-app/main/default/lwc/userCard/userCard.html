@@ -1,17 +1,17 @@
 <template>
-  <article>
-    <div>
-      <img src={user.BannerPhotoUrl} alt={labels.TextoAlternativoPlanoFundo} />
+  <article class="uc-card">
+    <div class="uc-background-image-wrapper">
+      <img class="uc-background-image" src={user.BannerPhotoUrl} alt={labels.TextoAlternativoPlanoFundo} />
     </div>
-    <div>
-      <div>
-        <img src={user.FullPhotoUrl} alt={labels.TextoAlternativoImagemUsuario} />
-      </div>
+    <div class="uc-card__container">
+      <button class="uc-user-image-wrapper" onclick={navigateToUserProfile}>
+        <img class="uc-background-image" src={user.FullPhotoUrl} alt={labels.TextoAlternativoImagemUsuario} />
+      </button>
+      <section class="uc-user-details__container">
+        <h2 class="slds-truncate">{user.Name}</h2>
+        <h3 class="slds-truncate">{user.Title}</h3>
+        <p class="slds-truncate">{user.AboutMe}</p>
+      </section>
     </div>
-    <section>
-      <h2>{user.Name}</h2>
-      <h3>{user.Title}</h3>
-      <p>{user.AboutMe}</p>
-    </section>
   </article>
 </template>
