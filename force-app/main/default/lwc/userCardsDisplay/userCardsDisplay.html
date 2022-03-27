@@ -3,8 +3,10 @@
     <header>
       <h2>{labels.ConhecaColegasEquipe}</h2>
     </header>
-    <template for:each={users} for:item="user">
-      <c-user-card key={user.Id} user={user}></c-user-card>
-    </template>
+    <div class="uc-display__cards">
+      <template for:each={users} for:item="user">
+        <c-user-card class="uc-display__cards-item" key={user.Id} user={user}></c-user-card>
+      </template>
+    </div>
   </article>
 </template>

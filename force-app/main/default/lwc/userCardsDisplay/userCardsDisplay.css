@@ -1,8 +1,22 @@
 .uc-display {
   padding: .75rem;
+  max-height: 27.7636875rem;
+  overflow-y: auto;
 }
 
 .uc-display h2 {
   font-size: 1rem;
   font-weight: 700;
+}
+
+.uc-display__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.uc-display__cards-item {
+  width: 100%;
 }
