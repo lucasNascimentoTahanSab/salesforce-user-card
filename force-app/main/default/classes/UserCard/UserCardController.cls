@@ -1,5 +1,5 @@
 public class UserCardController {
-  @AuraEnabled
+  @AuraEnabled(cacheable=true)
   public static String getUsersData() {
     return UserCardService.getUsersData();
   }
